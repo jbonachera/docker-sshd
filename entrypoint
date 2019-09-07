@@ -1,4 +1,4 @@
 #/bin/sh
 
 test -r  "/etc/ssh/ssh_host_rsa_key" || ssh-keygen -t rsa -f /etc/ssh/ssh_host_rsa_key -N ""
-/usr/sbin/sshd -D
+/usr/sbin/sshd -D $@
